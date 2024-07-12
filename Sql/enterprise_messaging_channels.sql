@@ -1,0 +1,15 @@
+create table if not exists enterprise_messaging_channels(
+point_to_point_channel_id Integer not null,
+pubsub_channel varchar(255) null,
+is_approved char null,
+dead_letter_channel Integer null,
+gauranteed_delivery varchar(255) null,
+chanel_adapter varchar(255) null,
+messaging_bridge Integer null,
+message_code Integer null,
+message_bus varchar(255) null,
+change_data_capture Integer null,
+encryption_mechanism varchar(255) null,
+status varchar(255) null,
+remarks varchar(255) null,
+constraint enterprise_messaging_channels_pk primary key(point_to_point_channel_id));
